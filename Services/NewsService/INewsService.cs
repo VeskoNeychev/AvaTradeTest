@@ -1,6 +1,6 @@
-﻿using API.Models;
+﻿using Services.Models;
 
-namespace API.Services
+namespace Services.NewsService
 {
     public interface INewsService
     {

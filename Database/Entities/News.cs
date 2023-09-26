@@ -20,6 +20,10 @@ namespace Database.Entities
 
         public ICollection<string> Keywords { get; set; }
 
+        public Guid BulletinId { get; set; }
+
+        public Bulletin Bulletin { get; set; }
+
         public DateTime PublishedUtc { get; set; }
 
         public Guid PublisherId { get; set; }
@@ -29,7 +33,5 @@ namespace Database.Entities
         public ICollection<string> Tickers { get; set; }
 
         public string Title { get; set; }
-
-        public Guid BulletinId { get; set; }
     }
 }

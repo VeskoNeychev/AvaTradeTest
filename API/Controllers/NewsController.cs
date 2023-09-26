@@ -1,7 +1,6 @@
-﻿using API.Services;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Services.NewsService;
 
 namespace API.Controllers
 {

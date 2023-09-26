@@ -11,5 +11,9 @@
         public string LogoUrl { get; set; }
 
         public string Name { get; set; }
+
+        public Guid NewsId { get; set; }
+
+        public IEnumerable<News> News { get; set; }
     }
 }

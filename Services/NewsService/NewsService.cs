@@ -1,8 +1,8 @@
-﻿using API.Models;
-using Database;
+﻿using Database;
 using Microsoft.EntityFrameworkCore;
+using Services.Models;
 
-namespace API.Services
+namespace Services.NewsService
 {
     public class NewsService : INewsService
     {
@@ -20,7 +20,7 @@ namespace API.Services
                     .Include(n => n.Publisher)
                     .ToListAsync();
 
-            return news.Select(x =>  new News
+            return news.Select(x => new News
             {
                 Author = x.Author,
                 // all needed info

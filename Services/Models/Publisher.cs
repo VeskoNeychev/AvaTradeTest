@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace API.Models
+﻿namespace Services.Models
 {
     public class Publisher
     {
